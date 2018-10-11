@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430551AC2018D6D800F139CD /* MSServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 430551AA2018D6D800F139CD /* MSServer.cpp */; };
+		430551AD2018D6D800F139CD /* MSServer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 430551AB2018D6D800F139CD /* MSServer.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		430551C6201A1A9900F139CD /* MSTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 430551C52019EEC500F139CD /* MSTypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		431AD9F9200E31700080D360 /* MSSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431AD9F7200E31700080D360 /* MSSocket.cpp */; };
+		431AD9FA200E31700080D360 /* MSSocket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 431AD9F8200E31700080D360 /* MSSocket.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		431AD9FD200E317D0080D360 /* MSLocalSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431AD9FB200E317D0080D360 /* MSLocalSocket.cpp */; };
+		431AD9FE200E317D0080D360 /* MSLocalSocket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 431AD9FC200E317D0080D360 /* MSLocalSocket.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		431ADA01200E31870080D360 /* MSNetSocket.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 431AD9FF200E31870080D360 /* MSNetSocket.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		431ADA02200E31870080D360 /* MSNetSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431ADA00200E31870080D360 /* MSNetSocket.cpp */; };
+		431ADA05200E31910080D360 /* MSSocketInterface.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 431ADA03200E31910080D360 /* MSSocketInterface.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		431ADA06200E31910080D360 /* MSSocketInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431ADA04200E31910080D360 /* MSSocketInterface.cpp */; };
+		431ADA14200E39DD0080D360 /* MSErrorManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431ADA12200E39DD0080D360 /* MSErrorManager.cpp */; };
+		431ADA15200E39DD0080D360 /* MSErrorManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 431ADA13200E39DD0080D360 /* MSErrorManager.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		431ADA1C200E67820080D360 /* MSNetServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431ADA1A200E67820080D360 /* MSNetServer.cpp */; };
+		431ADA1D200E67820080D360 /* MSNetServer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 431ADA1B200E67820080D360 /* MSNetServer.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		431ADA24200E67D10080D360 /* MSLocalServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 431ADA22200E67D10080D360 /* MSLocalServer.cpp */; };
+		431ADA25200E67D10080D360 /* MSLocalServer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 431ADA23200E67D10080D360 /* MSLocalServer.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		438C30C62021ECBF009AD62B /* MSEventManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 438C30C42021ECBF009AD62B /* MSEventManager.cpp */; };
+		438C30C72021ECBF009AD62B /* MSEventManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 438C30C52021ECBF009AD62B /* MSEventManager.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		430551AA2018D6D800F139CD /* MSServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MSServer.cpp; sourceTree = "<group>"; };
+		430551AB2018D6D800F139CD /* MSServer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MSServer.hpp; sourceTree = "<group>"; };
+		430551C52019EEC500F139CD /* MSTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSTypes.h; sourceTree = "<group>"; };
+		431AD9EA200E312A0080D360 /* libMSSocketLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSSocketLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		431AD9F7200E31700080D360 /* MSSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSSocket.cpp; sourceTree = "<group>"; };
+		431AD9F8200E31700080D360 /* MSSocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MSSocket.hpp; sourceTree = "<group>"; };
+		431AD9FB200E317D0080D360 /* MSLocalSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSLocalSocket.cpp; sourceTree = "<group>"; };
+		431AD9FC200E317D0080D360 /* MSLocalSocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MSLocalSocket.hpp; sourceTree = "<group>"; };
+		431AD9FF200E31870080D360 /* MSNetSocket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MSNetSocket.hpp; sourceTree = "<group>"; };
+		431ADA00200E31870080D360 /* MSNetSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSNetSocket.cpp; sourceTree = "<group>"; };
+		431ADA03200E31910080D360 /* MSSocketInterface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MSSocketInterface.hpp; sourceTree = "<group>"; };
+		431ADA04200E31910080D360 /* MSSocketInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSSocketInterface.cpp; sourceTree = "<group>"; };
+		431ADA12200E39DD0080D360 /* MSErrorManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MSErrorManager.cpp; sourceTree = "<group>"; };
+		431ADA13200E39DD0080D360 /* MSErrorManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MSErrorManager.hpp; sourceTree = "<group>"; };
+		431ADA1A200E67820080D360 /* MSNetServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MSNetServer.cpp; sourceTree = "<group>"; };
+		431ADA1B200E67820080D360 /* MSNetServer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MSNetServer.hpp; sourceTree = "<group>"; };
+		431ADA22200E67D10080D360 /* MSLocalServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MSLocalServer.cpp; sourceTree = "<group>"; };
+		431ADA23200E67D10080D360 /* MSLocalServer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MSLocalServer.hpp; sourceTree = "<group>"; };
+		438C30C42021ECBF009AD62B /* MSEventManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MSEventManager.cpp; sourceTree = "<group>"; };
+		438C30C52021ECBF009AD62B /* MSEventManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MSEventManager.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		431AD9E7200E312A0080D360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430551AE2018F74400F139CD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				430551AB2018D6D800F139CD /* MSServer.hpp */,
+				430551AA2018D6D800F139CD /* MSServer.cpp */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		431AD9E1200E312A0080D360 = {
+			isa = PBXGroup;
+			children = (
+				430551C52019EEC500F139CD /* MSTypes.h */,
+				431AD9F5200E315A0080D360 /* Error */,
+				431AD9F6200E315F0080D360 /* Interface */,
+				431ADA1E200E678D0080D360 /* Server */,
+				431AD9F1200E31360080D360 /* Sockets */,
+				431AD9EB200E312A0080D360 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		431AD9EB200E312A0080D360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				431AD9EA200E312A0080D360 /* libMSSocketLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		431AD9F1200E31360080D360 /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				431AD9F4200E314D0080D360 /* Network */,
+				431AD9F3200E31470080D360 /* Local */,
+				431AD9F2200E31410080D360 /* Base */,
+			);
+			path = Sockets;
+			sourceTree = "<group>";
+		};
+		431AD9F2200E31410080D360 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				431AD9F8200E31700080D360 /* MSSocket.hpp */,
+				431AD9F7200E31700080D360 /* MSSocket.cpp */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		431AD9F3200E31470080D360 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				431AD9FC200E317D0080D360 /* MSLocalSocket.hpp */,
+				431AD9FB200E317D0080D360 /* MSLocalSocket.cpp */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		431AD9F4200E314D0080D360 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				431AD9FF200E31870080D360 /* MSNetSocket.hpp */,
+				431ADA00200E31870080D360 /* MSNetSocket.cpp */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		431AD9F5200E315A0080D360 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				431ADA13200E39DD0080D360 /* MSErrorManager.hpp */,
+				431ADA12200E39DD0080D360 /* MSErrorManager.cpp */,
+				438C30C52021ECBF009AD62B /* MSEventManager.hpp */,
+				438C30C42021ECBF009AD62B /* MSEventManager.cpp */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		431AD9F6200E315F0080D360 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				431ADA03200E31910080D360 /* MSSocketInterface.hpp */,
+				431ADA04200E31910080D360 /* MSSocketInterface.cpp */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		431ADA1E200E678D0080D360 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				431ADA20200E679A0080D360 /* Local */,
+				431ADA1F200E67940080D360 /* Network */,
+				430551AE2018F74400F139CD /* Base */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		431ADA1F200E67940080D360 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				431ADA1B200E67820080D360 /* MSNetServer.hpp */,
+				431ADA1A200E67820080D360 /* MSNetServer.cpp */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		431ADA20200E679A0080D360 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				431ADA23200E67D10080D360 /* MSLocalServer.hpp */,
+				431ADA22200E67D10080D360 /* MSLocalServer.cpp */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		431AD9E8200E312A0080D360 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431ADA15200E39DD0080D360 /* MSErrorManager.hpp in Headers */,
+				438C30C72021ECBF009AD62B /* MSEventManager.hpp in Headers */,
+				431ADA05200E31910080D360 /* MSSocketInterface.hpp in Headers */,
+				431AD9FA200E31700080D360 /* MSSocket.hpp in Headers */,
+				431ADA1D200E67820080D360 /* MSNetServer.hpp in Headers */,
+				430551C6201A1A9900F139CD /* MSTypes.h in Headers */,
+				431ADA25200E67D10080D360 /* MSLocalServer.hpp in Headers */,
+				430551AD2018D6D800F139CD /* MSServer.hpp in Headers */,
+				431ADA01200E31870080D360 /* MSNetSocket.hpp in Headers */,
+				431AD9FE200E317D0080D360 /* MSLocalSocket.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		431AD9E9200E312A0080D360 /* MSSocketLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431AD9EE200E312A0080D360 /* Build configuration list for PBXNativeTarget "MSSocketLibrary" */;
+			buildPhases = (
+				431AD9E6200E312A0080D360 /* Sources */,
+				431AD9E7200E312A0080D360 /* Frameworks */,
+				431AD9E8200E312A0080D360 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSSocketLibrary;
+			productName = MSSocketLibrary;
+			productReference = 431AD9EA200E312A0080D360 /* libMSSocketLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		431AD9E2200E312A0080D360 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Mihail Shevchuk";
+				TargetAttributes = {
+					431AD9E9200E312A0080D360 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 431AD9E5200E312A0080D360 /* Build configuration list for PBXProject "MSSocketLibrary" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 431AD9E1200E312A0080D360;
+			productRefGroup = 431AD9EB200E312A0080D360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				431AD9E9200E312A0080D360 /* MSSocketLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		431AD9E6200E312A0080D360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431ADA1C200E67820080D360 /* MSNetServer.cpp in Sources */,
+				431ADA06200E31910080D360 /* MSSocketInterface.cpp in Sources */,
+				431ADA24200E67D10080D360 /* MSLocalServer.cpp in Sources */,
+				431ADA14200E39DD0080D360 /* MSErrorManager.cpp in Sources */,
+				430551AC2018D6D800F139CD /* MSServer.cpp in Sources */,
+				438C30C62021ECBF009AD62B /* MSEventManager.cpp in Sources */,
+				431AD9FD200E317D0080D360 /* MSLocalSocket.cpp in Sources */,
+				431ADA02200E31870080D360 /* MSNetSocket.cpp in Sources */,
+				431AD9F9200E31700080D360 /* MSSocket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		431AD9EC200E312A0080D360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		431AD9ED200E312A0080D360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		431AD9EF200E312A0080D360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCND298RHL;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		431AD9F0200E312A0080D360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCND298RHL;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		431AD9E5200E312A0080D360 /* Build configuration list for PBXProject "MSSocketLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431AD9EC200E312A0080D360 /* Debug */,
+				431AD9ED200E312A0080D360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		431AD9EE200E312A0080D360 /* Build configuration list for PBXNativeTarget "MSSocketLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431AD9EF200E312A0080D360 /* Debug */,
+				431AD9F0200E312A0080D360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 431AD9E2200E312A0080D360 /* Project object */;
+}
